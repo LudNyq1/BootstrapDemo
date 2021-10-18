@@ -20,55 +20,76 @@
             margin-bottom: 15px;
             border: 1px black solid;
         }
+
+        .jalla{
+            background-color: #db4a39 ;
+            border-width: 0;
+            padding:10px;
+            border-radius: 5px;
+        }
+        
+        span{
+            color:#fff;
+        }
+        
     </style>
 
     <title>Hello world</title>
 </head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
 <body>
-    <div class = "container-sm">
-        <div class = "row">
-            <h1>Hello World!</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit accusamus rem 
-            voluptatibus blanditiis asperiores cum enim deserunt debitis amet. Fuga, eligendi cumque 
-            cum placeat voluptatum veniam unde vero ipsa sequi?</p>
-        </div>  
-        <div class = "row">
-            <div class="d-flex justify-content-center">
-                <div class="col-md-2">
-                    <div class="demo-content">.col-md-4</div>
-                </div>
-                <div class="col-md-2">
-                    <div class="demo-content">.col-md-4</div>
-                </div>
-                <div class="col-md-2">
-                    <div class="demo-content">.col-md-4</div>
-                </div>
-                <div class="col-md-2">
-                    <div class="demo-content">.col-md-4</div>
-                </div>
+<div class="container-lg">
+<div class="d-flex justify-content-center h-100">
+    <div class="user_card">
+        <div class="d-flex justify-content-center">
+        	<div class="d-flex justify-content-center form_container"></div>
+    <form>
+        <div class="input-group mb-3">
+            <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="demo-content">.col-md-4</div>
-            </div>
-            <div class="col-md-8">
-                <div class="demo-content bg-alt">.col-md-8</div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="demo-content">.col-md-4</div>
-            </div>
-            <div class="col-md-8">
-                <div class="demo-content bg-alt">.col-md-8</div>
-            </div>
-        </div>
-
+        <input type="text" name="username" placeholder="Username" class="form-control input_user">
     </div>
+    <div class="input-group mb-2">
+        <div class="input-group-append">
+            <span class="input-group-text"><i class="fas fa-key"></i></span>
+        </div>
+        <input type="password" name="password" placeholder="Password" class="form-control input_pass" >
+    </div>
+    <div class="form-group">
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customControlInline">
+            <label class="custom-control-label" for="customControlInline">Remember me</label>
+        </div>
+        <div class="form-group">
+        <input type="submit" name="login" value="Login">
+        </div>
+    </form>
+    <form class="form-signin">
+<div class="social-login">
+    <button class="jalla" class="btn google-btn social-btn" type="button"><span><i class="fab fa-google"></i> Sign in with Google</span> </button>
+</div>
+</form>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 
